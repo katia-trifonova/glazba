@@ -16,25 +16,16 @@
 
 }
 
-.body {
-
-  /* max-width: 100%; */
-  /* overflow: hidden; */
-}
 .wrap {
   width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
+  position: relative;
 }
-
-
-
-
 
 .intro,
 .screenshot--01{
   min-height: 780px;
-
 }
 
 .intro {
@@ -47,12 +38,8 @@
   float: right;
 }
 
-/* .screenshot--01 img {
-  max-width: 100%;
-} */
-
 .intro__logo {
-  margin-left: 220px;
+  margin-left: 230px;
 }
 
 .intro__title {
@@ -78,13 +65,13 @@
   border: none;
 }
 
+/* .intro__appstore {
+  transition: 2s box-shadow ease;
+}
 
-
-
-
-
-
-
+.intro__appstore:hover {
+  box-shadow: 0 0 6px 6px rgba(255, 255, 255, .4) inset;
+} */
 
 .desktop--02 {
   background-color: #fff;
@@ -97,14 +84,12 @@
   float: left;
 }
 
-
 .features {
   float: right;
   max-width: 500/1000*100%;
   margin-left: 20px;
   padding-top: 150px;
 }
-
 
 .features__feature {
   position: relative;
@@ -116,20 +101,11 @@
   color: #f52853;
 }
 
-
 .features__feature::before {
   position: absolute;
   left: -50px;
   content: '—';
 }
-
-
-
-
-
-
-
-
 
 .feedback {
   min-width: 1000px;
@@ -138,37 +114,33 @@
   padding-bottom: 150px;
 }
 
-.feedback__col {
-  position: relative;
-  float: left;
-}
-
 .feedback__txt {
   margin: 0;
   position: absolute;
-  top: 0;
+  max-width: 926px;
   font-size: 24px;
-  min-width: 926px;
+  /* min-width: 800px; */
   padding:75px;
   padding-top: 45px;
   text-align: center;
   vertical-align: center;
   color: #fff;
+  background-position: 50%;
 }
 
-.feedback__txt--user01 {
-  /* display: none; */
+.feedback__txt--maria {
+  display: none;
   background-image: url(../img/response-01.svg);
   background-repeat: no-repeat;
 }
 
-.feedback__txt--user02 {
+.feedback__txt--petr {
   display: none;
   background-image: url(../img/response-02.svg);
   background-repeat: no-repeat;
 }
 
-.feedback__txt--user03 {
+.feedback__txt--ark {
   display: none;
   background-image: url(../img/response-03.svg);
   background-repeat: no-repeat;
@@ -178,19 +150,15 @@
   display: block;
 }
 
-.js-feedback-off {
-  display: none;
-}
-
 .feedback__user {
-  margin-top: 180px;
+  float: left;
+  margin-top: 200px;
   display: block;
   position: relative;
   width: 960/3px;
   padding-left: 84px;
   text-decoration: none;
 }
-
 
 .feedback__user::before {
   position: absolute;
@@ -207,6 +175,7 @@
   font-size: 24px;
   font-weight: 400;
   color: #f52853;
+  text-decoration: none;
 }
 
 .feedback__job {
@@ -214,11 +183,6 @@
   font-size: 18px;
   color: #000;
 }
-
-
-
-
-
 
 footer {
   background-color: #dfdfdf;

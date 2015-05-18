@@ -12,14 +12,11 @@ html {
   background-image: linear-gradient(to right bottom, #f52853, #f57929);
   background-repeat: no-repeat;
 }
-.body {
-  /* max-width: 100%; */
-  /* overflow: hidden; */
-}
 .wrap {
   width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
+  position: relative;
 }
 .intro,
 .screenshot--01 {
@@ -33,11 +30,8 @@ html {
 .screenshot--01 {
   float: right;
 }
-/* .screenshot--01 img {
-  max-width: 100%;
-} */
 .intro__logo {
-  margin-left: 220px;
+  margin-left: 230px;
 }
 .intro__title {
   margin: 0;
@@ -59,6 +53,13 @@ html {
   background-color: transparent;
   border: none;
 }
+/* .intro__appstore {
+  transition: 2s box-shadow ease;
+}
+
+.intro__appstore:hover {
+  box-shadow: 0 0 6px 6px rgba(255, 255, 255, .4) inset;
+} */
 .desktop--02 {
   background-color: #fff;
   min-width: 850px;
@@ -94,33 +95,30 @@ html {
   padding-top: 120px;
   padding-bottom: 150px;
 }
-.feedback__col {
-  position: relative;
-  float: left;
-}
 .feedback__txt {
   margin: 0;
   position: absolute;
-  top: 0;
+  max-width: 926px;
   font-size: 24px;
-  min-width: 926px;
+  /* min-width: 800px; */
   padding: 75px;
   padding-top: 45px;
   text-align: center;
   vertical-align: center;
   color: #fff;
+  background-position: 50%;
 }
-.feedback__txt--user01 {
-  /* display: none; */
+.feedback__txt--maria {
+  display: none;
   background-image: url(../img/response-01.svg);
   background-repeat: no-repeat;
 }
-.feedback__txt--user02 {
+.feedback__txt--petr {
   display: none;
   background-image: url(../img/response-02.svg);
   background-repeat: no-repeat;
 }
-.feedback__txt--user03 {
+.feedback__txt--ark {
   display: none;
   background-image: url(../img/response-03.svg);
   background-repeat: no-repeat;
@@ -128,11 +126,9 @@ html {
 .js-feedback-on {
   display: block;
 }
-.js-feedback-off {
-  display: none;
-}
 .feedback__user {
-  margin-top: 180px;
+  float: left;
+  margin-top: 200px;
   display: block;
   position: relative;
   width: 320px;
@@ -153,6 +149,7 @@ html {
   font-size: 24px;
   font-weight: 400;
   color: #f52853;
+  text-decoration: none;
 }
 .feedback__job {
   margin: 0;
