@@ -1,9 +1,9 @@
-var maria = document.querySelector(".feedback__name--maria");
-var petr = document.querySelector(".feedback__name--petr");
-var ark = document.querySelector(".feedback__name--ark");
-var txtMaria = document.querySelector(".feedback__txt--maria");
-var txtPetr = document.querySelector(".feedback__txt--petr");
-var txtArk = document.querySelector(".feedback__txt--ark");
+var maria = document.querySelector(".feedback__name--user01");
+var petr = document.querySelector(".feedback__name--user02");
+var ark = document.querySelector(".feedback__name--user03");
+var txtMaria = document.querySelector(".feedback__txt--user01");
+var txtPetr = document.querySelector(".feedback__txt--user02");
+var txtArk = document.querySelector(".feedback__txt--user03");
 
 maria.addEventListener("click", function(event){
   event.preventDefault();
