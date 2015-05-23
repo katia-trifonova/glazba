@@ -111,6 +111,28 @@ html {
     margin-bottom: 70px;
   }
 }
+/* MOBILE-INTRO */
+@media screen and (max-width: 540px) {
+  .intro {
+    padding-top: 35px;
+  }
+  .intro__logo {
+    width: 50px;
+  }
+  .intro__title {
+    font-size: 48px;
+  }
+  .intro__text {
+    font-size: 14px;
+    max-width: 200px;
+  }
+  .intro__appstore {
+    margin-bottom: 60px;
+  }
+  .intro__appstore img {
+    width: 150px;
+  }
+}
 /*SCREENSHOTS*/
 .screenshot--01 {
   float: right;
@@ -159,9 +181,14 @@ html {
   }
 }
 /* MOBILE-SCREENSHOTS */
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 540px) {
   .screenshot--01 img:last-child {
     display: none;
+  }
+  .screenshot--01 img:first-child {
+    float: none;
+    display: block;
+    margin: 0 auto;
   }
 }
 /*FEATURES*/
@@ -231,6 +258,28 @@ html {
   }
   .features ul {
     padding: 0 2.85714286%;
+  }
+}
+/* MOBILE-FEATURES */
+@media screen and (max-width: 540px) {
+  .features {
+    padding-bottom: 0;
+  }
+  .features__feature {
+    font-size: 14px;
+    text-align: center;
+    padding-left: 0;
+    padding-bottom: 70px;
+    max-width: 250px;
+  }
+  .features__feature::before {
+    transform: scale(0.6);
+    left: 50%;
+    top: -30px;
+    margin-left: -20px;
+  }
+  .features__feature--itunes::before {
+    top: -35px;
   }
 }
 /*FEEDBACK*/
@@ -382,6 +431,34 @@ html {
     right: 2.85714286%;
   }
 }
+/* MOBILE-FEEDBACK */
+@media screen and (max-width: 540px) {
+  .feedback__col {
+    padding: 0 4.16666667%;
+  }
+  .feedback__txt {
+    font-size: 14px;
+    min-width: 150px;
+    margin-bottom: 20px;
+  }
+  .feedback__user {
+    padding-left: 40px;
+  }
+  .feedback__name {
+    font-size: 10px;
+  }
+  .feedback__name::before {
+    transform: scale(0.7);
+    top: -20px;
+    left: -60px;
+  }
+  .feedback__job {
+    font-size: 10px;
+  }
+  .feedback__button {
+    transform: scale(0.8);
+  }
+}
 /*FOOTER*/
 footer {
   background-color: #dfdfdf;
@@ -401,5 +478,11 @@ footer {
     margin: 0 auto;
     background-color: transparent;
     border: none;
+  }
+}
+/* MOBILE-FOOTER */
+@media screen and (max-width: 540px) {
+  .footer__appstore img {
+    width: 150px;
   }
 }
