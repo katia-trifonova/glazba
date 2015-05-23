@@ -9,6 +9,7 @@
   font-weight: 200;
 }
 
+
 .wrap {
   max-width: 1000px;
   margin: 0 auto;
@@ -86,6 +87,7 @@
 
 .intro__text {
   margin: 0;
+  margin-bottom: 70px;
   font-size: 30px;
   font-weight: 100;
   letter-spacing: 1/30em;
@@ -113,7 +115,7 @@
   .intro {
     float: none;
     width: 100%;
-    padding-top: 40px;
+    padding-top: 70px;
   }
 
   .intro__title {
@@ -139,7 +141,7 @@
   .intro__appstore {
     display: block;
     margin: 0 auto;
-    margin-bottom: 120px;
+    margin-bottom: 70px;
   }
 }
 
@@ -192,8 +194,8 @@
     width: 100%;
     max-width: 560px;
     margin: 0 auto;
-    margin-bottom: 100px;
-    padding: 0 20px;
+    margin-bottom: 70px;
+    padding: 0 20/700*100%;
 
   }
 
@@ -270,23 +272,52 @@
 
   .features {
     margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 30px;
     float: none;
     max-width: 100%;
     background-color: #fff;
   }
 
   .features__feature {
-    max-width: 480px;
-    padding-left: 40px;
+    max-width: 520px;
+    padding-left: 70px;
     margin: 0 auto;
     font-size: 24px;
   }
 
-  .features__feature::before {
-    display: none;
+.features__feature::before {
+    content: '';
+    left: 0px;
+    top: 5px;
+}
+
+  .features__feature--vk::before {
+    width: 40px;
+    height: 23px;
+    background-image: url("../img/icons/vk.svg");
   }
+
+  .features__feature--wifi::before {
+    width: 39px;
+    height: 30px;
+    background-image: url("../img/icons/wifi.svg");
+  }
+
+  .features__feature--itunes::before {
+    width: 38px;
+    height: 38px;
+    background-image: url("../img/icons/itunes.svg");
+  }
+
+  .features__feature--playlist::before {
+    width: 33px;
+    height: 23px;
+    background-image: url("../img/icons/playlist.svg");
+  }
+
   .features ul {
-    padding-left: 0;
+    padding: 0 20/700*100%;
   }
 }
 
@@ -359,7 +390,7 @@
 
 .feedback__name::before {
   position: absolute;
-  left: 0;
+  left: -76px;
   top: -8px;
   content: '';
   width: 66px;
@@ -368,6 +399,7 @@
 }
 
 .feedback__name {
+  position: relative;
   margin: 0;
   font-size: 24px;
   font-weight: 400;
@@ -381,11 +413,93 @@
   color: #000;
 }
 
+.feedback__button {
+  display: none;
+}
+
 
 /* TABLET-FEEDBACK */
 
 @media screen and (max-width: 870px) {
 
+  .feedback {
+    position: relative;
+    padding: 70px 0;
+    min-width: 240px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #f52853;
+    background-image: linear-gradient(to right bottom, #f52853, #f5533c);
+  }
+
+  .feedback .wrap {
+    max-width: 300%;
+    width: 300%;
+  }
+
+  .feedback__col {
+    position: relative;
+    float: left;
+    width: 1/3*100%;
+    padding: 0 20/700*100%;
+  }
+
+  .feedback__txt {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 45px;
+    display: block;
+    position: relative;
+    width: 100%;
+    min-width: 240px;
+    max-width: 100%;
+    font-size: 18px;
+    background-color: transparent;
+    background-image: none;
+  }
+
+  .feedback__user {
+    position: relative;
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 240px;
+    text-align: center;
+  }
+
+  .feedback__name {
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .feedback__name::before {
+    top: -12px;
+  }
+
+  .feedback__job {
+    font-size: 14px;
+  }
+
+  .feedback__txt::before {
+    display: none;
+  }
+
+  .feedback__button {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    top: 80px;
+    height: 43px;
+    width: 20px;
+  }
+
+  .feedback__button--previous {
+    left: 20/700*100%;
+  }
+
+  .feedback__button--next {
+    right: 20/700*100%;
+  }
 
 }
 
@@ -399,19 +513,26 @@ footer {
   display: none;
 }
 
-.footer__appstore {
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 120px;
-  margin-bottom: 120px;
-  background-color: transparent;
-  border: none;
-}
-
 
 /* TABLET-FOOTER */
 
 @media screen and (max-width: 870px) {
+
+  footer {
+    width: 100%;
+    display: block;
+    padding: 70px 0;
+  }
+
+  .footer__appstore {
+
+    display: block;
+    padding: 0;
+    width: 250px;
+    margin: 0 auto;
+    background-color: transparent;
+    border: none;
+  }
 
 
 }
