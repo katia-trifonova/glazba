@@ -5,30 +5,33 @@ var txtMaria = document.querySelector(".feedback__txt--user01");
 var txtPetr = document.querySelector(".feedback__txt--user02");
 var txtArk = document.querySelector(".feedback__txt--user03");
 
-maria.addEventListener("click", function(event){
-  event.preventDefault();
-  txtMaria.classList.add("js-feedback-on");
-  txtPetr.classList.remove("js-feedback-on");
-  txtArk.classList.remove("js-feedback-on");
-});
 
-petr.addEventListener("click", function(event){
-  event.preventDefault();
-  txtPetr.classList.add("js-feedback-on");
-  txtMaria.classList.remove("js-feedback-on");
-  txtArk.classList.remove("js-feedback-on");
-});
 
-ark.addEventListener("click", function(event){
-  event.preventDefault();
-  txtArk.classList.add("js-feedback-on");
-  txtMaria.classList.remove("js-feedback-on");
-  txtPetr.classList.remove("js-feedback-on");
-});
 
-var previous = document.querySelector(".feedback__button--previous");
-var next = document.querySelector(".feedback__button--next");
+  maria.addEventListener("click", function(event){
+    event.preventDefault();
+    txtMaria.classList.add("js-feedback-on");
+    txtPetr.classList.remove("js-feedback-on");
+    txtArk.classList.remove("js-feedback-on");
+  });
 
-next.addEventListener("click", function(event){
-  event.preventDefault();
-});
+  petr.addEventListener("click", function(event){
+    event.preventDefault();
+    txtPetr.classList.add("js-feedback-on");
+    txtMaria.classList.remove("js-feedback-on");
+    txtArk.classList.remove("js-feedback-on");
+  });
+
+  ark.addEventListener("click", function(event){
+    event.preventDefault();
+    txtArk.classList.add("js-feedback-on");
+    txtMaria.classList.remove("js-feedback-on");
+    txtPetr.classList.remove("js-feedback-on");
+  });
+
+  var previous = document.querySelector(".feedback__button--previous");
+  var next = document.querySelector(".feedback__button--next");
+
+  next.addEventListener("click", function(event){
+    event.preventDefault();
+  });
