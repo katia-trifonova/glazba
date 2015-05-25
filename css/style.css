@@ -415,7 +415,8 @@ button:focus {
     padding: 70px 0;
     min-width: 240px;
     width: 100%;
-    overflow: hidden;
+    height: 261px;
+    /* overflow: hidden; */
     background-color: #f52853;
     background: -webkit-linear-gradient(315deg, #f52853 30%, #f57829 100%);
     background: linear-gradient(135deg, #f52853 30%, #f57829 100%);
@@ -484,6 +485,7 @@ width: 20px; */
 @media screen and (max-width: 540px) {
   .feedback {
     padding: 40px 0;
+    height: 161px;
   }
   .feedback__col {
     padding: 0 4.16666667%;
