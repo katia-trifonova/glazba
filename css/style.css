@@ -341,6 +341,7 @@ button:focus {
   display: block;
   position: relative;
   width: 33.33333333%;
+  text-align: center;
   padding-left: 84px;
   text-decoration: none;
 }
@@ -353,15 +354,15 @@ button:focus {
   height: 26px;
 }
 .feedback__txt--user01::before {
-  left: 12%;
+  left: 19%;
   background-image: url(../img/reply-01.svg);
 }
 .feedback__txt--user02::before {
-  left: 42%;
+  left: 50%;
   background-image: url(../img/reply-02.svg);
 }
 .feedback__txt--user03::before {
-  left: 72%;
+  left: 78%;
   background-image: url(../img/reply-03.svg);
 }
 .feedback__name::before {
@@ -510,7 +511,7 @@ footer {
   margin: 0 auto;
   text-align: center;
   padding-top: 20px;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 }
 .footer__vk,
 .footer__fb,
