@@ -312,8 +312,8 @@ button:focus {
 .feedback {
   min-width: 850px;
   background-color: #dfdfdf;
-  padding-top: 120px;
-  padding-bottom: 150px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .feedback__txt {
   display: none;
@@ -396,9 +396,6 @@ button:focus {
   font-size: 18px;
   color: #000;
 }
-.feedback__button {
-  display: none;
-}
 /* RETINA-USERPICS */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .feedback__name--user01::before {
@@ -466,20 +463,6 @@ width: 300%; */
   .feedback__txt::before {
     display: none;
   }
-  .feedback__button {
-    display: block
-    /*     position: absolute;
-z-index: 100;
-top: 80px;
-height: 43px;
-width: 20px; */
-  }
-  .feedback__button--previous {
-    /* left: 20/700*100%; */
-  }
-  .feedback__button--next {
-    /* right: 20/700*100%; */
-  }
 }
 /* MOBILE-FEEDBACK */
 @media screen and (max-width: 540px) {
@@ -513,40 +496,80 @@ width: 20px; */
   .feedback__job {
     font-size: 10px;
   }
-  .feedback__button {
-    -webkit-transform: scale(0.6);
-        -ms-transform: scale(0.6);
-            transform: scale(0.6);
-  }
 }
 /*FOOTER*/
 footer {
   background-color: #dfdfdf;
+}
+.footer__appstore {
   display: none;
+}
+.footer__links {
+  background-color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.footer__vk,
+.footer__fb,
+.footer__press,
+.footer__contacts {
+  text-decoration: none;
+  font-size: 18px;
+  padding-right: 10%;
+  color: #000000 /* f52853 */;
+}
+.footer__contacts {
+  padding-right: 0;
 }
 /* TABLET-FOOTER */
 @media screen and (max-width: 870px) {
   footer {
     width: 100%;
-    display: block;
-    padding: 70px 0;
+    padding-top: 60px;
   }
   .footer__appstore {
     display: block;
     padding: 0;
-    width: 250px;
+    padding-bottom: 60px;
     margin: 0 auto;
     background-color: transparent;
     border: none;
+  }
+  .footer__links {
+    background-color: #fff;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
 /* MOBILE-FOOTER */
 @media screen and (max-width: 540px) {
   footer {
-    padding: 40px 0;
+    padding-top: 40px;
     min-width: 320px;
   }
   .footer__appstore img {
     width: 150px;
+  }
+  .footer__appstore {
+    padding-bottom: 40px;
+  }
+  .footer__links {
+    padding: 0;
+  }
+  .footer__vk,
+  .footer__fb,
+  .footer__press,
+  .footer__contacts {
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    background-color: #f52853;
+    padding-right: 0;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff;
   }
 }

@@ -28,10 +28,3 @@ var txtArk = document.querySelector(".feedback__txt--user03");
     txtMaria.classList.remove("js-feedback-on");
     txtPetr.classList.remove("js-feedback-on");
   });
-
-  var previous = document.querySelector(".feedback__button--previous");
-  var next = document.querySelector(".feedback__button--next");
-
-  next.addEventListener("click", function(event){
-    event.preventDefault();
-  });
