@@ -43,12 +43,11 @@ button:focus {
     background: linear-gradient(135deg, #f52853 15%, #f57829 70%, #f52853 80%, #f57829 100%, #f57829 100%);
   }
   .wrap {
-    max-width: 100%;
     padding: 0;
   }
   .desktop--01,
   .desktop--02 {
-    min-width: 321px;
+    min-width: 320px;
     padding: 0;
     background-color: transparent;
     background-image: none;
@@ -56,8 +55,10 @@ button:focus {
 }
 /* MOBILE-LAYOUT */
 @media screen and (max-width: 540px) {
+  html {
+    min-width: 320px;
+  }
   body {
-    background-size: 100%;
     background: -webkit-linear-gradient(315deg, #f52853 15%, #f57829 50%, #f52853 70%, #f57829 100%, #f57829 100%);
     background: linear-gradient(135deg, #f52853 15%, #f57829 50%, #f52853 70%, #f57829 100%, #f57829 100%);
   }
