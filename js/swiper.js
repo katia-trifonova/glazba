@@ -13,7 +13,7 @@
  * Released on: April 25, 2015
  */
 
- if (screen.width < 870) {
+ if (window.innerWidth < 870) {
 
 (function () {
     'use strict';
