@@ -565,13 +565,13 @@ footer {
   .footer__press,
   .footer__contacts {
     display: block;
-    font-size: 18px;
-    color: #fff;
-    background-color: #f52853;
+    font-size: 16px;
+    color: #f52853;
+    background-color: #fff;
     padding-right: 0;
     width: 100%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #fff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #f52853;
   }
 }
