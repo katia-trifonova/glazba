@@ -9,7 +9,12 @@
 	<meta property="og:type" content="website" />
 
 	<script type="text/javascript">
-		window.location.href = "http://redeem.io/1albc22.m2bd1";
+		var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
+		if (isIOS) {
+			window.location.href = "batch2817244874://unlock/code/m2bd1";
+		} else {
+			window.location.href = "http://redeem.io/1albc22.m2bd1";
+		}
 	</script>
 	
 	<title>Glazba – Music Player</title>
