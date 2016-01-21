@@ -125,6 +125,7 @@ button:focus {
   .intro__appstore {
     display: block;
     margin: 0 auto;
+    text-align: center;
     margin-bottom: 70px;
   }
 }
