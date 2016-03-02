@@ -10,6 +10,13 @@ handlers:
   static_files: vk.html
   upload: vk.html
 
+- url: /ads
+  static_files: remove_ads.html
+  upload: remove_ads.html
+
+- url: /codes.*
+  script: codes.py
+
 - url: /
   static_files: index.html
   upload: index.html
@@ -32,6 +39,10 @@ handlers:
 - url: /robots.txt
   static_files: static/robots.txt
   upload: static/robots.txt
+
+- url: /press_kit
+  static_files: static/press_kit.zip
+  upload: static/press_kit.zip
 
 libraries:
 - name: django
